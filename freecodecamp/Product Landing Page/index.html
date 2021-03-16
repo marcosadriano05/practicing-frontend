@@ -5,6 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
 	<title>Product Landing Page</title>
 </head>
 <body>
@@ -15,7 +18,7 @@
 			<ul>
 				<li><a class="nav-link" href="#start">Start</a></li>
 				<li><a class="nav-link" href="#how-it-works">How it works</a></li>
-				<li><a class="nav-link" href="#">Pricing</a></li>
+				<li><a class="nav-link" href="#pricing">Pricing</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -23,16 +26,81 @@
 	<main>
 		<section id="start">
 			<h2>Send your Email to receive more information</h2>
-			<form id="form" on-submit="https://www.freecodecamp.com/email-submit">
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
 				<input id="email" type="email" placeholder="Enter your email adress" required>
 				<input id="submit" type="submit">
 			</form>
 		</section>
 
 		<section id="how-it-works">
-			<iframe id="video" width="420" height="315"
-				src="https://www.youtube.com/embed/tgbNymZ7vqY">
-			</iframe>
+			<article>
+				<i class="fas fa-fire"></i>
+				<div>
+				<h3>Premium materials</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere temporibus at consectetur asperiores aliquam maiores laudantium, expedita, recusandae unde atque? Sint aperiam ab inventore libero consequatur nihil quas doloremque.
+					</p>
+				</div>
+			</article>
+			<article>
+				<i class="fas fa-shipping-fast"></i>
+				<div>
+					<h3>Fast Shipping</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere temporibus at consectetur asperiores aliquam maiores laudantium, expedita, recusandae unde atque? Sint aperiam ab inventore libero consequatur nihil quas doloremque.
+						</p>
+					</div>
+			</article>
+			<article>
+				<i class="fas fa-clipboard-check"></i>
+				<div>
+					<h3>Quality assurance</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere temporibus at consectetur asperiores aliquam maiores laudantium, expedita, recusandae unde atque? Sint aperiam ab inventore libero consequatur nihil quas doloremque.
+						</p>
+					</div>
+			</article>
+			<div>
+				<iframe id="video" width="420" height="315"
+					src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</iframe>
+			</div>
+		</section>
+
+		<section id="pricing">
+			<div class="card">
+				<h3>Card title</h3>
+				<div class="content">
+					<span>Price</span>
+					<p>Informationasasdasd</p>
+					<p>Information</p>
+					<p>Information</p>
+					<p>Information</p>
+					<button>Select</button>
+				</div>
+			</div>
+			<div class="card">
+				<h3>Card title</h3>
+				<div class="content">
+					<span>Price</span>
+					<p>Information</p>
+					<p>Information</p>
+					<p>Information</p>
+					<p>Information</p>
+					<button>Select</button>
+				</div>
+			</div>
+			<div class="card">
+				<h3>Card title</h3>
+				<div class="content">
+					<span>Price</span>
+					<p>Information</p>
+					<p>Information</p>
+					<p>Information</p>
+					<p>Information</p>
+					<button>Select</button>
+				</div>
+			</div>
 		</section>
 	</main>
 	

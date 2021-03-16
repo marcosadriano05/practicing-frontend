@@ -2,11 +2,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -28,12 +27,10 @@ body {
 
 #header-img {
 	height: 3rem;
-	border: 1px solid black;
 }
 
 #nav-bar {
 	padding: 1.5rem 0.5rem;
-	border: 1px solid black;
 }
 
 #nav-bar > ul {
@@ -49,24 +46,35 @@ body {
 }
 
 .nav-link {
-	border: 1px solid black;
 	border-radius: 5px;
+	box-shadow: 5px 15px 60px rgba(0, 0, 0, 0.05);
 	padding: 0.5rem;
 	text-decoration: none;
+	color: black;
+	background: rgb(255, 174, 0);
 	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.nav-link:hover {
+	color: white;
+	background: rgb(175, 120, 0);
 }
 /* Header */
 
-/* Form section */
+/* Start section */
 main {
+	max-width: 60rem;
+	min-height: 100vh;
+	margin-top: 6rem;
 	padding: 2rem;
+	border: 1px solid black;
 }
 
 #start {
 	border: 1px solid black;
 	width: 100%;
 	padding: 2rem;
-	margin-top: 8rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -92,14 +100,73 @@ main {
 #email {
 	margin-bottom: 1rem;
 }
-/* Form section */
+/* Start section */
+
+/* How it works section*/
+#how-it-works article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0 1rem 2rem;
+}
+
+#how-it-works article .fas {
+	padding: 1rem;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 5.5rem;
+	color: rgb(255, 174, 0);
+}
+
+#how-it-works article div {
+	padding: 1rem 1rem 1rem 3rem;
+}
+
+#how-it-works > div {
+	padding: 2rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* How it works section*/
+
+/* Pricing section */
+#pricing {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid black;
+}
+
+#pricing .card {
+	border: 1px solid black;
+	padding: 0 0 1rem;
+	text-align: center;
+}
+
+#pricing .card h3 {
+	background: lightgray;
+	width: 100%;
+}
+
+#pricing .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 2rem 1rem;
+}
+/* Pricing section */
 
 
 
 
-
-
-@media (max-width: 825px) {
+@media (max-width: 850px) {
 	html {
 		font-size: 93.75%;
 	}
@@ -118,12 +185,12 @@ main {
 		margin-top: 1.5rem;
 	}
 
-	#start {
-		margin-top: 15.5rem;
+	main {
+		margin-top: 15rem;
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
 	html {
 		font-size: 87.50%;
 	}
@@ -146,8 +213,8 @@ main {
 	#nav-bar > ul > li:nth-child(n + 2) {
 		margin-top: 0;
 	}
-
-	#start {
-		margin-top: 21rem;
+	
+	main {
+		margin-top: 11rem;
 	}
 }
