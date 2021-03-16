@@ -8,12 +8,16 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 }
 
 /* Header */
 #header {
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	min-height: 5rem;
 	background-color: lightgray;
@@ -23,6 +27,8 @@ body {
 	justify-content: space-between;
 	padding: 0 2rem 0 2rem;
 	overflow: hidden;
+	z-index: 1000;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #header-img {
@@ -58,17 +64,16 @@ body {
 
 .nav-link:hover {
 	color: white;
-	background: rgb(175, 120, 0);
+	background: rgb(255, 136, 0);
 }
 /* Header */
 
 /* Start section */
 main {
+	width: 100%;
 	max-width: 60rem;
 	min-height: 100vh;
 	margin-top: 6rem;
-	padding: 2rem;
-	border: 1px solid black;
 }
 
 #start {
@@ -81,6 +86,7 @@ main {
 	text-align: center;
 	min-height: 10rem;
 	justify-content: space-between;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #start h2 {
@@ -104,6 +110,7 @@ main {
 
 /* How it works section*/
 #how-it-works article {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -117,12 +124,21 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 5.5rem;
+	font-size: 4rem;
 	color: rgb(255, 174, 0);
+	z-index: 1;
 }
 
 #how-it-works article div {
-	padding: 1rem 1rem 1rem 3rem;
+	border: 1px solid black;
+	padding: 1rem 2rem 1rem 3rem;
+	line-height: 1.5;
+	z-index: 2;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#how-it-works article div h3 {
+	padding: 0 0 1rem;;
 }
 
 #how-it-works > div {
@@ -132,26 +148,36 @@ main {
 	align-items: center;
 	justify-content: center;
 }
+
+#video {
+	height: 20rem;
+	width: 35rem;
+}
 /* How it works section*/
 
 /* Pricing section */
 #pricing {
+	padding: 2rem 1rem 0;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	border: 1px solid black;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #pricing .card {
 	border: 1px solid black;
 	padding: 0 0 1rem;
 	text-align: center;
+	min-width: 17rem;
+	margin-bottom: 2rem;
 }
 
 #pricing .card h3 {
 	background: lightgray;
 	width: 100%;
+	padding: 1rem;
 }
 
 #pricing .content {
@@ -161,12 +187,107 @@ main {
 	justify-content: center;
 	padding: 1rem 2rem 1rem;
 }
+
+#pricing .content span {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+#pricing .content ol {
+	padding: 1rem 0 1rem;
+}
+
+#pricing .content ol li {
+	line-height: 2;
+	list-style: none;
+}
+
+#pricing .content button {
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 15px 60px rgba(0, 0, 0, 0.05);
+	outline: none;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	color: black;
+	background: rgb(255, 174, 0);
+	cursor: pointer;
+}
+
+#pricing .content button:hover {
+	color: white;
+	background: rgb(255, 136, 0);
+}
 /* Pricing section */
 
+/* Footer section */
+footer {
+	background: lightgray;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 1rem 1rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer > ul > li {
+	padding: 0.5rem;
+	list-style: none;
+}
+
+footer > ul > li > a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2rem;
+}
+
+footer span {
+	padding: 0.5rem;
+	font-size: 0.9rem;
+	color: grey;
+}
+/* Footer section */
 
 
 
-@media (max-width: 850px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
 	html {
 		font-size: 93.75%;
 	}
@@ -190,7 +311,7 @@ main {
 	}
 }
 
-@media (max-width: 620px) {
+@media (max-width: 650px) {
 	html {
 		font-size: 87.50%;
 	}
@@ -215,6 +336,51 @@ main {
 	}
 	
 	main {
-		margin-top: 11rem;
+		margin-top: 11.1rem;
+	}
+
+	#how-it-works article {
+		padding: 1rem 0 1rem;
+	}
+
+	#how-it-works article .fas {
+		position: absolute;
+		font-size: 8rem;
+		opacity: 0.5;
+	}
+
+	#how-it-works article div {
+		max-width: 25rem;
+	}
+
+	#video {
+		height: 15rem;
+		width: 25rem;
+	}
+
+	#pricing {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px) {
+	#header-img {
+		height: 2.5rem;
+	}
+
+	main {
+		margin-top: 10.5rem;
+	}
+}
+
+@media (max-width: 380px) {
+	#nav-bar > ul {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	main {
+		margin-top: 16.6rem;
 	}
 }

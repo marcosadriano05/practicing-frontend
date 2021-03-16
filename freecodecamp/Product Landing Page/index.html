@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
 	<title>Product Landing Page</title>
@@ -27,7 +30,7 @@
 		<section id="start">
 			<h2>Send your Email to receive more information</h2>
 			<form id="form" action="https://www.freecodecamp.com/email-submit">
-				<input id="email" type="email" placeholder="Enter your email adress" required>
+				<input id="email" type="email" name="email" placeholder="Enter your email adress" required>
 				<input id="submit" type="submit">
 			</form>
 		</section>
@@ -36,7 +39,7 @@
 			<article>
 				<i class="fas fa-fire"></i>
 				<div>
-				<h3>Premium materials</h3>
+					<h3>Premium materials</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere temporibus at consectetur asperiores aliquam maiores laudantium, expedita, recusandae unde atque? Sint aperiam ab inventore libero consequatur nihil quas doloremque.
 					</p>
@@ -45,7 +48,7 @@
 			<article>
 				<i class="fas fa-shipping-fast"></i>
 				<div>
-					<h3>Fast Shipping</h3>
+						<h3>Fast Shipping</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere temporibus at consectetur asperiores aliquam maiores laudantium, expedita, recusandae unde atque? Sint aperiam ab inventore libero consequatur nihil quas doloremque.
 						</p>
@@ -53,7 +56,7 @@
 			</article>
 			<article>
 				<i class="fas fa-clipboard-check"></i>
-				<div>
+					<div>
 					<h3>Quality assurance</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere temporibus at consectetur asperiores aliquam maiores laudantium, expedita, recusandae unde atque? Sint aperiam ab inventore libero consequatur nihil quas doloremque.
@@ -61,48 +64,65 @@
 					</div>
 			</article>
 			<div>
-				<iframe id="video" width="420" height="315"
-					src="https://www.youtube.com/embed/tgbNymZ7vqY">
-				</iframe>
+				<iframe 
+					id="video" 
+					src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" 
+					frameborder="0" 
+					allowfullscreen=""
+				></iframe>
 			</div>
 		</section>
 
 		<section id="pricing">
 			<div class="card">
-				<h3>Card title</h3>
+				<h3>Tenor Trombone</h3>
 				<div class="content">
 					<span>Price</span>
-					<p>Informationasasdasd</p>
-					<p>Information</p>
-					<p>Information</p>
-					<p>Information</p>
+					<ol>
+						<li>Information</li>
+						<li>Information</li>
+						<li>Information</li>
+						<li>Information</li>
+					</ol>
 					<button>Select</button>
 				</div>
 			</div>
 			<div class="card">
-				<h3>Card title</h3>
+				<h3>Bass Trombone</h3>
 				<div class="content">
 					<span>Price</span>
-					<p>Information</p>
-					<p>Information</p>
-					<p>Information</p>
-					<p>Information</p>
+					<ol>
+						<li>Information</li>
+						<li>Information</li>
+						<li>Information</li>
+						<li>Information</li>
+					</ol>
 					<button>Select</button>
 				</div>
 			</div>
 			<div class="card">
-				<h3>Card title</h3>
+				<h3>Valve Trombone</h3>
 				<div class="content">
 					<span>Price</span>
-					<p>Information</p>
-					<p>Information</p>
-					<p>Information</p>
-					<p>Information</p>
+					<ol>
+						<li>Information</li>
+						<li>Information</li>
+						<li>Information</li>
+						<li>Information</li>
+					</ol>
 					<button>Select</button>
 				</div>
 			</div>
 		</section>
 	</main>
+	<footer>
+		<ul>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<span>Copyright 2021, Original Trombones</span>
+	</footer>
 	
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
