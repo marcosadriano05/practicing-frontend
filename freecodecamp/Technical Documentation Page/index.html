@@ -8,10 +8,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="./style.css">
   <title>JS Documentation</title>
 </head>
 <body>
+
+  <label for="check-nav" class="sr-only">Show Navigation Links</label>
+  <input id="check-nav" type="checkbox">
+  <label for="check-nav" class="color">
+    <i class="fas fa-chevron-down"></i>
+  </label>
+
   <nav id="navbar">
     <header>
       <h1>JS Documentation</h1>
@@ -141,6 +150,12 @@
       </div>
     </section>
   </main>
+
+  <div id="page-start">
+    <a href="#">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
