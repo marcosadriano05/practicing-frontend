@@ -24,6 +24,8 @@ body {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,14 +34,23 @@ header {
   width: 100%;
   padding: 1rem;
   box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
 }
 
 #navbar {
-  width: max-content;
-  height: max-content;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  background: #47241a;
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
 }
 
 #navbar ul {
@@ -102,15 +113,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-bottom: 1px solid white;
 }
 
 #projects h2 {
-  padding: 1rem;
+  padding: 2rem;
+  color: white;
 }
 
 #projects-content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -120,14 +134,91 @@ main {
 .project-tile {
   width: 20rem;
   height: 25rem;
-  margin: 1rem;
+  margin: 0 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
   border: 1px solid white;
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s;
 }
 
+.project-tile:hover {
+  transform: scale(1.05);
+}
 
+.project-tile .image {
+  width: 100%;
+  height: 100%;
+  background: tomato;
+}
 
+.project-tile .content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
+.project-tile .content h3 {
+  font-size: 1.5rem;
+  color: white;
+}
 
+.project-tile .content p {
+  color: white;
+}
+
+.project-tile .content a {
+  padding: 0.5rem 1rem;
+  background: var(--dark-green);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.project-tile .content a:hover {
+  background: #41c3b6;
+}
+
+#contacts {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#contacts h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#profile-link {
+  font-size: 3rem;
+  color: white;
+  transition: all 0.2s;
+}
+
+#profile-link i {
+  border-radius: 50%;
+}
+
+#profile-link i:hover {
+  background: black;
+}
+
+#profile-link:hover {
+  color: var(--light-purple);
+}
 
 footer {
   padding: 2em;
@@ -135,4 +226,15 @@ footer {
   align-items: center;
   justify-content: flex-end;
   background: var(--brown);
+}
+
+footer span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 728px) {
+  html {
+    font-size: 93.75%;
+  }
 }
