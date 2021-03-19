@@ -1,0 +1,138 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --dark-blue: #30398c;
+  --purple: #59308c;
+  --light-purple: #7f88e6;
+  --dark-green: #308c83;
+  --gray: #473b1a;
+  --brown: #47241a;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background: #47241a;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+#navbar {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 0;
+}
+
+#navbar ul li a {
+  padding: 0.5rem 1rem;
+  background: var(--dark-green);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+#navbar ul li a:hover {
+  background: #41c3b6;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray);
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+#welcome-section h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+#projects {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+#projects h2 {
+  padding: 1rem;
+}
+
+#projects-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tile {
+  width: 20rem;
+  height: 25rem;
+  margin: 1rem;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+footer {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: var(--brown);
+}
