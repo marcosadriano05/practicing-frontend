@@ -22,21 +22,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  background: #47241a;
-  width: 100%;
-  padding: 1rem;
-  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
-  z-index: 1000;
-}
-
 #navbar {
   position: fixed;
   top: 0;
@@ -45,12 +30,13 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  background: #47241a;
+  background: linear-gradient(270deg, var(--dark-green), var(--light-purple));
   width: 100%;
   height: max-content;
   padding: 1rem;
   box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
   z-index: 1000;
+  font-family: 'Lato', sans-serif;
 }
 
 #navbar ul {
@@ -69,7 +55,7 @@ header {
 
 #navbar ul li a {
   padding: 0.5rem 1rem;
-  background: var(--dark-green);
+  background: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -78,7 +64,7 @@ header {
 }
 
 #navbar ul li a:hover {
-  background: #41c3b6;
+  background: var(--dark-blue);
 }
 
 main {
@@ -88,7 +74,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--gray);
+  background: #f5f5f5;
 }
 
 #welcome-section {
@@ -99,12 +85,24 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid white;
+  font-family: 'Lato', sans-serif;
 }
 
 #welcome-section h1 {
-  color: white;
+  color: black;
   font-size: 3rem;
+  padding: 1rem;
+}
+
+#welcome-section span {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--dark-blue);
+}
+
+#welcome-section p {
+  font-size: 1.2rem;
 }
 
 #projects {
@@ -114,12 +112,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border-bottom: 1px solid white;
+  font-family: 'Lato', sans-serif;
 }
 
 #projects h2 {
   padding: 2rem;
-  color: white;
+  color: var(--dark-blue);
+  font-size: 2.5rem;
 }
 
 #projects-content {
@@ -138,8 +137,7 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  border: 1px solid white;
-  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.2s;
 }
@@ -151,7 +149,13 @@ main {
 .project-tile .image {
   width: 100%;
   height: 100%;
-  background: tomato;
+}
+
+.project-tile .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-tile .content {
@@ -162,15 +166,17 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  border-top: 3px solid var(--dark-blue);
 }
 
 .project-tile .content h3 {
   font-size: 1.5rem;
-  color: white;
+  color: var(--dark-blue);
 }
 
 .project-tile .content p {
-  color: white;
+  color: black;
+  font-size: 1.1rem;
 }
 
 .project-tile .content a {
@@ -198,39 +204,61 @@ main {
 }
 
 #contacts h2 {
-  color: white;
+  color: var(--dark-blue);
   margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+#contacts p {
+  color: black;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
 }
 
 #profile-link {
   font-size: 3rem;
-  color: white;
+  color: var(--dark-blue);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#profile-link span {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   transition: all 0.2s;
 }
 
-#profile-link i {
-  border-radius: 50%;
-}
-
-#profile-link i:hover {
-  background: black;
-}
-
 #profile-link:hover {
+  background: rgba(0, 0, 0, 0.9);
   color: var(--light-purple);
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 footer {
   padding: 2em;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
-  background: var(--brown);
+  border-top: 5px solid var(--dark-blue);
+  font-family: 'Lato', sans-serif;
 }
 
 footer span {
-  color: white;
+  color: var(--dark-blue);
   font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 728px) {

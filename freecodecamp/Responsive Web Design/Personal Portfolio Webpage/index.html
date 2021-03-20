@@ -5,67 +5,94 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   
   <link rel="stylesheet" href="./style.css">
   <title>Portifolio</title>
 </head>
 <body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#welcome-section">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section id="welcome-section">
-      <h1>Welcome!</h1>
+      <h1>I'm Marcos Adriano!</h1>
+      <span>Welcome to my Portifolio Page!</span>
+      <p>I'm a web developer and passionate for the programming world.</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div id="projects-content">
         <article class="project-tile">
-          <div class="image"></div>
+          <div class="image">
+            <img src="./assets/original_trombones.png" alt="Original Trombones">
+          </div>
           <div class="content">
-            <h3>Project title</h3>
-            <p>Project description</p>
-            <a href="https://codepen.io/marcosadriano/pen/poNmzXd">Link para o projeto</a>
+            <h3>Original Trombones</h3>
+            <p>This project is a landing page of a trombones store.</p>
+            <a href="https://codepen.io/marcosadriano/details/poNmzXd" target="_blank">Project Link</a>
           </div>
         </article>
 
         <article class="project-tile">
-          <div class="image"></div>
+          <div class="image">
+            <img src="./assets/survey_form.png" alt="Survey Form">
+          </div>
           <div class="content">
-            <h3>Project title</h3>
-            <p>Project description</p>
-            <a href="https://codepen.io/marcosadriano/pen/poNmzXd">Link para o projeto</a>
+            <h3>Survey Form</h3>
+            <p>Form to know the opnion and sugestions of freeCodeCamp users.</p>
+            <a href="https://codepen.io/marcosadriano/details/bGBZdOo" target="_blank">Project Link</a>
           </div>
         </article>
 
         <article class="project-tile">
-          <div class="image"></div>
+          <div class="image">
+            <img src="./assets/documentation.png" alt="Javascript Documentation">
+          </div>
           <div class="content">
-            <h3>Project title</h3>
-            <p>Project description</p>
-            <a href="https://codepen.io/marcosadriano/pen/poNmzXd">Link para o projeto</a>
+            <h3>JS Documentation</h3>
+            <p>Javascript Documentation.</p>
+            <a href="https://codepen.io/marcosadriano/details/poNmzXd" target="_blank">Project Link</a>
+          </div>
+        </article>
+        
+        <article class="project-tile">
+          <div class="image">
+            <img src="./assets/tribute_page.png" alt="Bruce Lee Tribute Page">
+          </div>
+          <div class="content">
+            <h3>Tribute Page</h3>
+            <p>A tribute page to Bruce Lee.</p>
+            <a href="https://codepen.io/marcosadriano/details/jOVJPdz" target="_blank">Project Link</a>
           </div>
         </article>
       </div>
     </section>
 
     <section id="contacts">
-      <h2>My contacts</h2>
+      <h2>Let's work together!</h2>
+      <p>You can find me in these following links.</p>
       <a id="profile-link" href="https://github.com/marcosadriano05" target="_blank">
         <i class="fab fa-github"></i>
+        <span>Github</span>
       </a>
     </section>
   </main>
 
   <footer>
-    <span>03/19/2021</span>
+    <span>Created by Marcos Adriano</span>
+    <p>freeCodeCamp project</p>
   </footer>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
