@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   <script defer src="./script.js" type="text/javascript"></script>
   <title>Document</title>
 </head>
@@ -12,7 +14,7 @@
   <div class="container">
     <header>
       <h1>Tik Tak Toe</h1>
-      <span>Vez do jogador X</span>
+      <span data-message>Bem-vindo ao jogo</span>
     </header>
     <button id="1" data-square></button>
     <button id="2" data-square></button>
@@ -24,5 +26,6 @@
     <button id="8" data-square></button>
     <button id="9" data-square></button>
   </div>
+  <button data-reload>Reiniciar partida</button>
 </body>
 </html>

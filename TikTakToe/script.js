@@ -1,7 +1,13 @@
 const allButtons = document.querySelectorAll("[data-square]")
+const message = document.querySelector("[data-message]")
+const reload = document.querySelector("[data-reload]")
 
 let squares = {1: "a", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g", 8: "h", 9: "i"};
 const players = {1: "X", 2: "O", current: 1}
+let count = 0
+let hasDraw = false
+
+reload.addEventListener("click", () => window.location.reload());
 
 init()
 
@@ -19,26 +25,37 @@ function game(e, button) {
   button.style.cursor = "not-allowed"
   button.style.background = "#ccc"
 
-  let [hasWinner, positions] = checkResult()
-  if (hasWinner) {
-    console.log(`Player ${players.current} : ${players[players.current]} win!`)
+  let [hasFinished, positions] = checkResult()
+  if (hasFinished || hasDraw) {
     allButtons.forEach((button, index) => {
       button.style.cursor = "not-allowed"
       button.style.color = "#000"
+      button.setAttribute("disabled", true)
+      if (count === 9) {
+        message.textContent = `Jogo empatado`
+      } else {
+        message.textContent = `${players[players.current]} é o vencedor!`
+      }
+      reload.style.display = "block"
       if (positions.indexOf(index) >= 0) {
         button.style.background = "green"
       } else {
         button.style.background = "#FF4040"
       }
     })
+  } else {
+    players.current = checkCurrentPlayer(players.current)
+    message.textContent = `Vez do jogador ${players[players.current]}`
   }
-
-  players.current = checkCurrentPlayer(players.current)
 }
 
 function addSquareValue(e, button) {
   squares[e.target.id] = players[players.current]
   button.innerText = players[players.current]
+  count++
+  if (count === 9) {
+    hasDraw = true
+  }
 }
 
 function checkCurrentPlayer(current) {
