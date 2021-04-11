@@ -29,4 +29,12 @@ Minigame produced with the purpose of training skills like JavaScript language, 
 
 ---
 
-Made by Marcos Adriano - #NeverStopLearning
+Made by:
+
+<table>
+  <tr>
+    <td align="center"><img style="border-radius: 50%;" src="https://github.com/marcosadriano05.png" width="100px;" alt="Marcos Adriano"/><br /><sub><b><a href="https://linkedin.com/in/marcosadriano05" title="Marcos">Marcos Adriano</a></b></sub><br/>Desenvolvedor Web</td>
+  </tr>
+</table>
+
+ #NeverStopLearning
