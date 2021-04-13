@@ -13,6 +13,9 @@
   --dark-green: #308c83;
   --gray: #473b1a;
   --brown: #47241a;
+
+  scroll-padding-top: 50px;
+  scroll-behavior: auto;
 }
 
 body {
